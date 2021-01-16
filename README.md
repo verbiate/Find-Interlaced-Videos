@@ -17,4 +17,4 @@ Thankfully, ffmpeg includes a tool for looking at a range of frames to determine
 * The script uses Finder for scanning subfolders, which is inefficient. Because of this, large folders (esp. those with many subfolders) may make the script time out. Until this script is updated, try running the script multiple times, scanning fewer files at once. All results will be added to Interlaced.txt
 * The script will scan every file it finds, not only videos. This may lead to false positives.
 * ~~ffmpeg is able to determine whether videos are Top Frame First or Bottom Frame First (TFF or BFF). The script currently ignores this.~~
-* It's Mac-only. Ideally, this would run on PC. This could even be yolked together with the VEAI CLI to find files and process them in one fell swoop.
+* It's Mac-only. Ideally, this would run on PC. This could even be yolked together with the VEAI CLI to find files and process them in one fell swoop. For a similar project, check out this blog post by [Nicholas Hillegeer](http://www.aktau.be/2013/09/22/detecting-interlaced-video-with-ffmpeg/).
