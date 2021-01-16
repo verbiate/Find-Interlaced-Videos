@@ -7,7 +7,7 @@ Worse, many interlaced videos have incorrect metadata, so finding these files is
 
 ## To run
 * Open Script Editor on your Mac
-* Paste in the contents from Find Interlaced Videos.scpt
+* Paste in the contents from [Find Interlaced Videos.scpt](https://github.com/verbiate/Find-Interlaced-Videos/blob/main/Find%20Interlaced%20Videos.scpt)
 * Hit CMD+R (or click Run)
 * Choose a folder to scan. It will scan this folder and all subfolders.
 * Results will appear in a file named Interlaced.txt on your Desktop
