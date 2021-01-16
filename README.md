@@ -1,9 +1,9 @@
 # Find-Interlaced-Videos
 Lets you quickly create a list of videos that seem to be interlaced using ffmpeg on macOS
 
-There's a new version of [Topaz Video Enhance AI](https://topazlabs.com/video-enhance-ai/) (VEAI) that can take interlaced footage and create a double-framerate version by interpolating the missing half of each interlaced frame. Cool stuff! I wanted to kick the tires on it, but I know of no easy way to determine which videos I have are interlaced short of opening and inspecting each one individually.
+There's a new version of [Topaz Video Enhance AI](https://topazlabs.com/video-enhance-ai/) (VEAI) that can take interlaced footage and create a double-framerate version by interpolating the missing half of each interlaced frame. Cool stuff! I wanted to kick the tires on it, but I know of no easy way to determine which videos I have are interlaced short of opening and inspecting each one individually. Worse, many interlaced videos have incorrect metadata, so finding these files isn't as simple as looking for this flag. 
 
-Worse, many interlaced videos have incorrect metadata, so finding these files isn't as simple as looking for this flag. Thankfully, ffmpeg includes a tool for looking at a range of frames to determine whether or not a video *appears to be* interlaced. This Applescript takes an input folder, passes every file it finds to ffmpeg to run this test, and puts the paths of the results it finds in a text file on the Desktop. (Why? Because I'm better at Applescript than most other languages and I do my processing off a networked drive on my Windows PC.)
+Thankfully, ffmpeg includes a tool for looking at a range of frames to determine whether or not a video *appears to be* interlaced. This Applescript takes an input folder, passes every file it finds to ffmpeg to run this test, and puts the paths of the results it finds in a text file on the Desktop. (Why? Because I'm better at Applescript than most other languages and I do my processing off a networked drive on my Windows PC.)
 
 ## To run
 * Open Script Editor on your Mac
