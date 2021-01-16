@@ -70,12 +70,12 @@ repeat with theFile in filePile
 		if progValue is less than tffValue then
 			set isVideoInterlaced to true
 			log isVideoInterlaced
-			do shell script "echo " & this_posix_item & " >>~/Desktop/Interlaced.txt"
+			do shell script "echo TFF: " & this_posix_item & " >>~/Desktop/Interlaced.txt"
 			log "TFF"
 		else if progValue is less than bffValue then
 			set isVideoInterlaced to true
 			log isVideoInterlaced
-			do shell script "echo " & this_posix_item & " >>~/Desktop/Interlaced.txt"
+			do shell script "echo BFF: " & this_posix_item & " >>~/Desktop/Interlaced.txt"
 			log "BFF"
 		end if
 		
